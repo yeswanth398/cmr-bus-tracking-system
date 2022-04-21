@@ -1,0 +1,23 @@
+import g
+import pyrebase
+config={
+    "apiKey": "AIzaSyBwHFmQ89olQGcLiSBpg0nL9oYS_f9N8zc",
+    "authDomain": "gpstrack-cf2d5.firebaseapp.com",
+    "databaseURL": "https://gpstrack-cf2d5-default-rtdb.firebaseio.com",
+    "projectId": "gpstrack-cf2d5",
+    "storageBucket": "gpstrack-cf2d5.appspot.com",
+    "messagingSenderId": "188705544045",
+    "appId": "1:188705544045:web:6b827c25d9b3102637ec64"
+    };
+
+lat = g.lat 
+lng = g.lng    
+        
+firebase = pyrebase.initialize_app(config)
+storage = firebase.storage()
+db = firebase.database()
+db.child("bus location").child("Bus_1").child("location")
+data = {"lat":lat,"lng":lng}
+db.set(data)
+        
+        

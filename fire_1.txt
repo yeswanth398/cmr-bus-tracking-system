@@ -1,0 +1,16 @@
+from  firebase import firebase
+import time
+while True :
+	time.sleep(3)
+	f = open("/home/pi/Desktop/file_1.txt","r")
+#	url = 'https://gpstrack-cf2d5-default-rtdb.firebaseio.com/'
+	url = 'https://college-bus-tracking-2c75d-default-rtdb.firebaseio.com/'
+	#f = open("")
+	val = f.read()
+	v = float(val)
+	fb = firebase.FirebaseApplication(url)
+	result = fb.put("/Test/fg","Vall",v)
+	result = fb.put("/Test","Vall",3)
+	f.close()
+	print(result)
+

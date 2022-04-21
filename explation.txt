@@ -1,0 +1,28 @@
+To slove this , we have developed a system called COLLEGE BUS TRACKING . This system tracks the bus locations and displays their location points in maps and tells 
+how much time bus takes to arrive to the destination . 
+Here , to develop this we used the components are raspberry pi and GPS module .
+this device built into the bus and that tracks the bus location .
+and we developed a mobile application to show the bus location points in the maps to all the users .
+and to communicate location data , we use a server in between mobile application and GPS devise .
+the server we have used is FireBase by GOOGLE .
+Students can download application with free - of - cost and install in their devises
+and can see the bus location in the mobile application linked with this tracking system .
+this system definitely solve the problem .
+
+
+
+
+
+
+
+
+
+ROAD---MAP
+
+
+
+
+THE idea is to know the students of their location of thier college bus in their mobile device .
+we have built this prototype and have tested the device in real time .
+and with this device we present the idea with college buses .
+and we are planing to launch our MVP () 
